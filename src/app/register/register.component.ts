@@ -29,13 +29,35 @@ export class RegisterComponent implements OnInit {
       data => {
         this.tokenStorage.saveToken(data.accessToken);
         this.tokenStorage.saveUser(data);
-
         this.isLoginFailed = false;
         this.isLoggedIn = true;
         this.roles = this.tokenStorage.getUser().roles;
-        //this.reloadPage();
         console.log(data);
-        this.redirectUser(data);
+        console.log(data.roles);
+        this.redirectUser(data.roles);
+        /*this.authService.checkIfAlreagyLoggedIn().subscribe(
+          dataa=>{
+            console.log(dataa);
+           
+            if(dataa =="Change Password"){
+              console.log("HERE1");
+                this.router.navigateByUrl('/first_login').then(()=>{
+                window.location.reload();
+              })
+              }
+            else if(dataa =="Don't Change Password"){
+              console.log("HERE2");
+              this.redirectUser(data.roles);
+              }
+          },
+          err=>{
+            console.log("erreur : "+err);
+          }
+        )*/
+        //this.reloadPage();
+     
+       
+       
       },
       err => {
         this.errorMessage = err.error.message;

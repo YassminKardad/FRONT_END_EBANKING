@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { Facture } from '../models/facture.model';
 
-const baseUrl = 'http://localhost:8191/api/client';
+const baseUrl = 'http://localhost:8189/api/client';
 
 @Injectable({
   providedIn: 'root'
@@ -21,10 +21,10 @@ export class PaimentService {
   constructor(private http: HttpClient) { }
 
   get(factId: any): Observable<any> {
-    return this.http.get(`${baseUrl+"/checkSolde/1"}/${factId}`);
+    return this.http.get(`${baseUrl+"/checkSolde/2"}/${factId}`);
   }
   validPay(factId: any,data:any):Observable<any>{
-     return this.http.post(`${baseUrl+"/validPay/1"}/${factId}`,data);
+     return this.http.post(`${baseUrl+"/validPay/2"}/${factId}`,data);
      
   }
 

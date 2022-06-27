@@ -1,27 +1,36 @@
-/*.submit-form {
-    max-width: 400px;
-    margin: auto;
-  }*/
 
-  .gradient-custom {
-    /* fallback for old browsers */
-    background: #f093fb;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to bottom right, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1))
-    }
-    .head{
-        margin-bottom: 30px;
-    }
-    .card-registration .select-input.form-control[readonly]:not([disabled]) {
-    font-size: 1rem;
-    line-height: 2.15;
-    padding-left: .75em;
-    padding-right: .75em;
-    }
-    .card-registration .select-arrow {
-    top: 13px;
-    }
+.container{
+width:500px;
+background-color: rgba(84, 15, 188, 0.314);
+justify-items: center;
+margin: 20px 0 0 300px;
+padding: 30px;
+border-radius: 5px;
+}
+label, input {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 200px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+label {
+  color: #2D2D2D;
+  font-size: 15px;
+}
+
+ form,input {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.btn{
+  background-color: #0d1b17;
+  color: aliceblue;
+  font-size: 16px;
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+}
+  

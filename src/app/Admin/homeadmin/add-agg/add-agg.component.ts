@@ -27,6 +27,7 @@ export class AddAggComponent implements OnInit {
 
 
   saveAgent(): void {
+    console.log("HELLO");
     console.log(this.agent);
     const data = {
       firstname: this.agent.firstname,

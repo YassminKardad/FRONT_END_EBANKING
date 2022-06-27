@@ -8,7 +8,7 @@
                     <label for="firstname">Nom*</label><br>
                 <input type="text" [(ngModel)]="agent.firstname" [ngModelOptions]="{standalone: true}"/>
                 </div>
-                <h1>{{agent.firstname}}</h1>
+                
                 <div class="right">
                     <label>Prenom*</label><br>
                 <input type="text" required  [(ngModel)]="agent.lastname" [ngModelOptions]="{standalone: true}"/>
@@ -81,24 +81,7 @@
             
         </form>
     </div><br><br>
-    <hr class="normal">
-    <div class="bottom">
-        <h1>Pieces jointes</h1>
-        <hr><br>
-        <div class="rowtwo">
-            <div class="col">
-                <label>Fichier</label><br>
-            <div class="fichier">
-                <input type="text"   >
-            </div>
-            </div>
-            <div class="col">
-                <input class="add" type="button" value="+">
-            </div>
-            
-            
-        </div>
-    </div>
+   
     <div class="confirme">
         <input type="button" value="Enregistrer" class="ok" (click)="saveAgent()">
         <input type="button" value="Annuler" class="ok">

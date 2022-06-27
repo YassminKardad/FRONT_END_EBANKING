@@ -7,8 +7,7 @@
             class="form-control"
             placeholder="Search by first Name"
           />
-        
-  
+
           <div class="input-group-append">
             <button
               class="btn btn-outline-secondary"
@@ -29,8 +28,9 @@
             [class.active]="i == currentIndex"
             (click)="setActiveAgent(agent, i)"
           >
-            {{ agent.firstname }}
+            {{ agent.firstname }} {{ agent.lastname }} 
           </li>
+          
         </ul>
       </div>
       <div class="col-md-6">
